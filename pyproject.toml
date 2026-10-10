@@ -1,7 +1,7 @@
 [project]
-name = "quality-gate-api"
+name = "python-quality-gate"
 version = "0.1.0"
-description = "API de tareas con FastAPI y SQLite"
+description = "Pipeline de qualidade Python com Ruff, PyScan e pytest"
 requires-python = ">=3.13,<3.14"
 dependencies = [
     "fastapi>=0.115,<1",
@@ -9,7 +9,7 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = ["httpx>=0.27,<1", "pytest>=8,<10", "ruff>=0.11,<1", "urllib3==1.26.4"]
+dev = ["httpx>=0.27,<1", "pytest>=8,<10", "ruff>=0.11,<1"]
 
 [tool.uv]
 package = false
