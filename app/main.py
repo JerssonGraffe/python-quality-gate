@@ -1,3 +1,4 @@
+import math
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -19,4 +20,4 @@ app.include_router(tasks.router)
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "broken"}
