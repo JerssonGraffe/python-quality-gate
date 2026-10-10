@@ -55,7 +55,7 @@ tests/               # fluxo de tarefas, projetos e migração
 
 ## Verificar
 
-O workflow de CI executa Ruff e PyScan em jobs separados. O PyScan verifica vulnerabilidades nas dependências e reprova o job caso encontre alguma.
+O workflow de CI executa Ruff, PyScan e pytest em jobs separados. O PyScan verifica vulnerabilidades nas dependências e reprova o job caso encontre alguma.
 
 ```bash
 uv run --locked pytest -q
